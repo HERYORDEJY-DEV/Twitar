@@ -38,7 +38,9 @@ struct FabView: View {
 				.shadow(radius: 10)
 				.offset(x: -12, y: 0)
 			}
-		}.ignoresSafeArea()
+		}.background(.red.opacity(0))
+//		.opacity(0)
+			.ignoresSafeArea()
 	}
 }
 

@@ -27,10 +27,10 @@ extension Text {
 			.foregroundStyle(Color.primary)
 	}
 
-	func title_3() -> some View {
+	func title_3(color: Color = Color.primary) -> some View {
 		font(Font.get(type: .title_3))
 			.tracking(-0.3)
-			.foregroundStyle(Color.primary)
+			.foregroundStyle(color)
 	}
 
 	func buttonTitle() -> some View {

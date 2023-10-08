@@ -15,7 +15,7 @@ struct TabScreenNavView: View {
 //	@Environment(\.presentationMode) var presentationMode
 //	@State var searchQuery: String = ""
 	var topPadding = UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0
-	var activeScreen: TabStackEnum = .home
+	var activeScreen: TabStackEnum = .notification
 
 	//			MARK: - Body
 
@@ -52,9 +52,7 @@ struct TabScreenNavView: View {
 					.buttonStyle(.borderless)
 				}
 
-				Spacer().frame(width:
-					activeScreen == .trends ? 16 : .infinity
-				)
+				Spacer().frame(width: activeScreen == .home ? .infinity : 16)
 
 				//			principal
 				Button(action: {}) {
@@ -82,16 +80,19 @@ struct TabScreenNavView: View {
 							.clipShape(Capsule())
 
 						default:
-							Text(activeScreen.title).navTitle()
+							HStack {
+								Spacer()
+								Text(activeScreen.title).navTitle()
+								Spacer()
+							}
+							.frame(width: .infinity)
 					}
 				}
 				.buttonStyle(.borderless)
 				.frame(width: .infinity, height: .infinity, alignment: .center)
 
-				Spacer().frame(width:
-					activeScreen == .trends ? 16 : .infinity
-				)
-
+				Spacer().frame(width: activeScreen == .home ? .infinity : 16)
+				
 				//		trailing
 				Button(action: {
 					// presentationMode.wrappedValue.dismiss()

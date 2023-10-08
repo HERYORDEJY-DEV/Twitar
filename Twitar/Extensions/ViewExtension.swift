@@ -67,6 +67,12 @@ extension View {
 			.shadow(color: color, radius: radius, x: x, y: y)
 	}
 
+	@ViewBuilder
+	func screenContainer(bg: Color = Color.screenContainer, width: CGFloat = .infinity, height: CGFloat = .infinity) -> some View {
+		background(bg)
+//			.frame(width: width, height: height)
+	}
+
 //	@ViewBuilder
 //	func primaryButton(width: CGFloat = 136, height: CGFloat = 34, cornerRadius: CGFloat = 16, bg: Color = Color.accent) -> some View {
 //		foregroundStyle(Color.white)

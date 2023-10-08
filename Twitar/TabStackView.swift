@@ -25,7 +25,7 @@ struct TabStackView: View {
 					case .trends:
 						TrendsView()
 					case .notification:
-						NotificationsView()
+						NotificationsView() 
 					case .messages:
 						MessagesView()
 				}

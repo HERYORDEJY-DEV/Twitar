@@ -18,29 +18,40 @@ struct TrendsView: View {
 		NavigationView {
 			VStack(spacing: 0.33) {
 				TabScreenNavView(activeScreen: .trends)
-				ScrollView {
-					//					header
-					VStack(spacing: 0) {
-						HStack(alignment: .center) {
-							Text("Trends for you")
-								.title_2()
-								.padding(.horizontal, 20)
+				ZStack {
+					ScrollView {
+						//					header
+						VStack(spacing: 0.33) {
+							HStack(alignment: .center) {
+								Text("Trends for you")
+									.title_2()
+									.padding(.horizontal, 20)
 
-							Spacer()
-								.frame(maxHeight: .infinity)
+								Spacer()
+									.frame(maxHeight: .infinity)
+							}
+							.frame(width: .infinity, height: 50.33)
+							.background(.white)
+							.withBottomShadow()
+							EmptyTrendsView()
 						}
-						.frame(width: .infinity, height: 50.33)
-						.background(.white)
-//						.withBottomShadow()
-					}
 
-					EmptyTrendsView()
-				}.background(Color.orange)
+						Spacer()
+
+					}.screenContainer()
+						.frame(height: .infinity)
+
+					FabView(iconView: "ic-add-text")
+						.padding(.bottom, 100)
+						.ignoresSafeArea()
+				}
 			}
 			.ignoresSafeArea(.all)
 			.buttonStyle(.borderless)
+			FabView(iconView: "ic-add-text")
+				.padding(.bottom, 100)
+				.ignoresSafeArea()
 		}
-		.buttonStyle(.borderless)
 	}
 }
 

@@ -8,14 +8,30 @@
 import SwiftUI
 
 struct NotificationsView: View {
+	//			MARK: - Properties
+
+	@State var selectedTab: String = "All"
+
+	func onSelectTab(tab: NotificationsTabHeaderEnum) {
+		selectedTab = tab.title
+	}
+
+	//			MARK: - Body
+
 	var body: some View {
-		NavigationStack {
-			VStack {
-				Text("Hello, Notifications View!")
-			}.toolbar(content: {
-				TabScreenNavBarView(activeScreen: .notification)
-			})
+		VStack {
+			TabScreenNavView(activeScreen: .notification)
+			NotificationsTabHeaderView(
+				onSelectTab: self.onSelectTab)
+			TabView(selection: $selectedTab) {
+				NotificationsAllView()
+					.tag("All")
+				NotificationsMentionView()
+					.tag("Mentions")
+			}.frame(width: .infinity)
+				.tabViewStyle(.page(indexDisplayMode: .never))
 		}
+		.ignoresSafeArea()
 	}
 }
 

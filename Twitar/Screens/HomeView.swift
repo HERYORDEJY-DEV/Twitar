@@ -11,7 +11,7 @@ struct HomeView: View {
 	var body: some View {
 		NavigationView {
 			ZStack {
-				VStack {
+				VStack(spacing: 0.33) {
 					TabScreenNavView(activeScreen: .home).padding(.bottom, 0)
 					ScrollView {
 						TwitListView()
