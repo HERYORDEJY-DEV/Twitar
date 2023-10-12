@@ -33,6 +33,12 @@ extension Text {
 			.foregroundStyle(color)
 	}
 
+	func body(size: CGFloat = 16, color: Color = Color.primary) -> some View {
+		font(Font.get(type: .body, size: size))
+			.tracking(-0.3)
+			.foregroundStyle(color)
+	}
+
 	func buttonTitle() -> some View {
 		font(Font.get(type: .buttonTitle))
 			.tracking(-0.1)
@@ -52,8 +58,8 @@ extension Text {
 			.underline(color: Color.secondary)
 	}
 
-	func link() -> some View {
-		font(Font.get(type: .link))
+	func link(size: CGFloat = 16, color: Color = Color.accentColor) -> some View {
+		font(Font.get(type: .body, size: size))
 			.tracking(-0.3)
 			.foregroundStyle(Color.accent)
 	}

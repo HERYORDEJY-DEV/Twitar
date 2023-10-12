@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "img-horse-plane.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

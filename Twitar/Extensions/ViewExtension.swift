@@ -62,8 +62,8 @@ extension View {
 	}
 
 	@ViewBuilder
-	func withBottomShadow(color: Color = .colorShadow, radius: CGFloat = 0, x: CGFloat = 0, y: CGFloat = 0.33) -> some View {
-		background(.colorWhite)
+	func withBottomShadow(color: Color = .colorShadow, bg: Color = .colorWhite, radius: CGFloat = 0, x: CGFloat = 0, y: CGFloat = 0.33) -> some View {
+		background(bg)
 			.shadow(color: color, radius: radius, x: x, y: y)
 	}
 
@@ -71,6 +71,11 @@ extension View {
 	func screenContainer(bg: Color = Color.screenContainer, width: CGFloat = .infinity, height: CGFloat = .infinity) -> some View {
 		background(bg)
 //			.frame(width: width, height: height)
+	}
+	
+	@ViewBuilder
+	func withFabButton(img: String) -> some View {
+		
 	}
 
 //	@ViewBuilder

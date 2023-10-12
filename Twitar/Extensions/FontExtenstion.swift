@@ -87,7 +87,7 @@ extension Font {
 				return Font.custom(fontFamily.name, size: size ?? 14.0)
 
 			default:
-				let fontFamily: AppFontsFamily = .regular
+				fontFamily = .regular
 				return Font.custom(fontFamily.name, size: size ?? 16.0)
 		}
 	}

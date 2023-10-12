@@ -53,6 +53,7 @@
 		E70D1E472AC9DCA800435E04 /* TwitItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70D1E462AC9DCA800435E04 /* TwitItemModel.swift */; };
 		E7BF68852AD22B88007EC983 /* NotificationsAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF68842AD22B88007EC983 /* NotificationsAllView.swift */; };
 		E7BF68872AD22BBE007EC983 /* NotificationsMentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF68862AD22BBE007EC983 /* NotificationsMentionView.swift */; };
+		E7BF68892AD7D434007EC983 /* MotificationsMentionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF68882AD7D433007EC983 /* MotificationsMentionItemView.swift */; };
 		E7CEF9E22AD1B4CA00C99F31 /* NotificationsTabHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CEF9E12AD1B4CA00C99F31 /* NotificationsTabHeaderView.swift */; };
 		E7DB39CB2ACB42BF006ED3A3 /* TwitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DB39CA2ACB42BF006ED3A3 /* TwitView.swift */; };
 		E7DB39CD2ACDE627006ED3A3 /* EmptyTrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DB39CC2ACDE627006ED3A3 /* EmptyTrendsView.swift */; };
@@ -109,6 +110,7 @@
 		E70D1E462AC9DCA800435E04 /* TwitItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitItemModel.swift; sourceTree = "<group>"; };
 		E7BF68842AD22B88007EC983 /* NotificationsAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAllView.swift; sourceTree = "<group>"; };
 		E7BF68862AD22BBE007EC983 /* NotificationsMentionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsMentionView.swift; sourceTree = "<group>"; };
+		E7BF68882AD7D433007EC983 /* MotificationsMentionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotificationsMentionItemView.swift; sourceTree = "<group>"; };
 		E7CEF9E12AD1B4CA00C99F31 /* NotificationsTabHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTabHeaderView.swift; sourceTree = "<group>"; };
 		E7DB39CA2ACB42BF006ED3A3 /* TwitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitView.swift; sourceTree = "<group>"; };
 		E7DB39CC2ACDE627006ED3A3 /* EmptyTrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTrendsView.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				E7CEF9E12AD1B4CA00C99F31 /* NotificationsTabHeaderView.swift */,
 				E7BF68842AD22B88007EC983 /* NotificationsAllView.swift */,
 				E7BF68862AD22BBE007EC983 /* NotificationsMentionView.swift */,
+				E7BF68882AD7D433007EC983 /* MotificationsMentionItemView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 			files = (
 				E7DB39CF2ACDE819006ED3A3 /* ButtonExtension.swift in Sources */,
 				E70D1E062AC8F60A00435E04 /* FontExtenstion.swift in Sources */,
+				E7BF68892AD7D434007EC983 /* MotificationsMentionItemView.swift in Sources */,
 				E70D1E362AC90F3D00435E04 /* TextModifier.swift in Sources */,
 				E7CEF9E22AD1B4CA00C99F31 /* NotificationsTabHeaderView.swift in Sources */,
 				E70D1DF52AC7645400435E04 /* TabStackModel.swift in Sources */,
