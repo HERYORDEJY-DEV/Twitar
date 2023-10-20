@@ -51,9 +51,14 @@
 		E70D1E432AC9D75700435E04 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70D1E422AC9D75700435E04 /* ActivityIndicator.swift */; };
 		E70D1E452AC9D87800435E04 /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70D1E442AC9D87800435E04 /* LoadingIndicatorView.swift */; };
 		E70D1E472AC9DCA800435E04 /* TwitItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70D1E462AC9DCA800435E04 /* TwitItemModel.swift */; };
+		E74720B72ADFDBC10059CA1D /* TwitDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74720B62ADFDBC10059CA1D /* TwitDetailView.swift */; };
+		E74720B92ADFDC0C0059CA1D /* StackScreenNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74720B82ADFDC0C0059CA1D /* StackScreenNavView.swift */; };
 		E7BF68852AD22B88007EC983 /* NotificationsAllView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF68842AD22B88007EC983 /* NotificationsAllView.swift */; };
 		E7BF68872AD22BBE007EC983 /* NotificationsMentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF68862AD22BBE007EC983 /* NotificationsMentionView.swift */; };
 		E7BF68892AD7D434007EC983 /* MotificationsMentionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF68882AD7D433007EC983 /* MotificationsMentionItemView.swift */; };
+		E7BF688B2AD85246007EC983 /* MessagesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF688A2AD85246007EC983 /* MessagesSettingsView.swift */; };
+		E7BF688E2ADE8977007EC983 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = E7BF688D2ADE8977007EC983 /* Inject */; };
+		E7BF68902ADEA1E1007EC983 /* NewMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BF688F2ADEA1E1007EC983 /* NewMessagesView.swift */; };
 		E7CEF9E22AD1B4CA00C99F31 /* NotificationsTabHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CEF9E12AD1B4CA00C99F31 /* NotificationsTabHeaderView.swift */; };
 		E7DB39CB2ACB42BF006ED3A3 /* TwitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DB39CA2ACB42BF006ED3A3 /* TwitView.swift */; };
 		E7DB39CD2ACDE627006ED3A3 /* EmptyTrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DB39CC2ACDE627006ED3A3 /* EmptyTrendsView.swift */; };
@@ -108,9 +113,13 @@
 		E70D1E422AC9D75700435E04 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		E70D1E442AC9D87800435E04 /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
 		E70D1E462AC9DCA800435E04 /* TwitItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitItemModel.swift; sourceTree = "<group>"; };
+		E74720B62ADFDBC10059CA1D /* TwitDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitDetailView.swift; sourceTree = "<group>"; };
+		E74720B82ADFDC0C0059CA1D /* StackScreenNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackScreenNavView.swift; sourceTree = "<group>"; };
 		E7BF68842AD22B88007EC983 /* NotificationsAllView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAllView.swift; sourceTree = "<group>"; };
 		E7BF68862AD22BBE007EC983 /* NotificationsMentionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsMentionView.swift; sourceTree = "<group>"; };
 		E7BF68882AD7D433007EC983 /* MotificationsMentionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotificationsMentionItemView.swift; sourceTree = "<group>"; };
+		E7BF688A2AD85246007EC983 /* MessagesSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesSettingsView.swift; sourceTree = "<group>"; };
+		E7BF688F2ADEA1E1007EC983 /* NewMessagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessagesView.swift; sourceTree = "<group>"; };
 		E7CEF9E12AD1B4CA00C99F31 /* NotificationsTabHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTabHeaderView.swift; sourceTree = "<group>"; };
 		E7DB39CA2ACB42BF006ED3A3 /* TwitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitView.swift; sourceTree = "<group>"; };
 		E7DB39CC2ACDE627006ED3A3 /* EmptyTrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTrendsView.swift; sourceTree = "<group>"; };
@@ -123,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BF688E2ADE8977007EC983 /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,10 +188,13 @@
 		E70D1DED2AC74D5300435E04 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				E7BF688F2ADEA1E1007EC983 /* NewMessagesView.swift */,
 				E70D1DF62AC76B7300435E04 /* HomeView.swift */,
 				E70D1DF82AC76B8300435E04 /* TrendsView.swift */,
 				E70D1DFA2AC76BB000435E04 /* NotificationsView.swift */,
 				E70D1DFC2AC76BC500435E04 /* MessagesView.swift */,
+				E7BF688A2AD85246007EC983 /* MessagesSettingsView.swift */,
+				E74720B62ADFDBC10059CA1D /* TwitDetailView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -203,6 +216,7 @@
 				E7BF68842AD22B88007EC983 /* NotificationsAllView.swift */,
 				E7BF68862AD22BBE007EC983 /* NotificationsMentionView.swift */,
 				E7BF68882AD7D433007EC983 /* MotificationsMentionItemView.swift */,
+				E74720B82ADFDC0C0059CA1D /* StackScreenNavView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -294,6 +308,7 @@
 			);
 			name = Twitar;
 			packageProductDependencies = (
+				E7BF688D2ADE8977007EC983 /* Inject */,
 			);
 			productName = Twitar;
 			productReference = E70D1DDC2AC73B5600435E04 /* Twitar.app */;
@@ -324,6 +339,7 @@
 			);
 			mainGroup = E70D1DD32AC73B5600435E04;
 			packageReferences = (
+				E7BF688C2ADE8977007EC983 /* XCRemoteSwiftPackageReference "Inject" */,
 			);
 			productRefGroup = E70D1DDD2AC73B5600435E04 /* Products */;
 			projectDirPath = "";
@@ -382,11 +398,15 @@
 				E70D1DFD2AC76BC500435E04 /* MessagesView.swift in Sources */,
 				E70D1E382AC91FD900435E04 /* CustomContentView.swift in Sources */,
 				E7BF68852AD22B88007EC983 /* NotificationsAllView.swift in Sources */,
+				E7BF68902ADEA1E1007EC983 /* NewMessagesView.swift in Sources */,
+				E74720B72ADFDBC10059CA1D /* TwitDetailView.swift in Sources */,
 				E70D1DF22AC74DD700435E04 /* BottomTabBarView.swift in Sources */,
 				E70D1E332AC90BBD00435E04 /* TextExtension.swift in Sources */,
 				E70D1DF92AC76B8300435E04 /* TrendsView.swift in Sources */,
+				E7BF688B2AD85246007EC983 /* MessagesSettingsView.swift in Sources */,
 				E70D1E042AC8F2EE00435E04 /* TwitItemView.swift in Sources */,
 				E70D1E3A2AC92BCE00435E04 /* TwitListView.swift in Sources */,
+				E74720B92ADFDC0C0059CA1D /* StackScreenNavView.swift in Sources */,
 				E70D1DF02AC74DB500435E04 /* TabStackView.swift in Sources */,
 				E70D1E3E2AC9B50700435E04 /* ViewExtension.swift in Sources */,
 				E70D1E0A2AC8FD3D00435E04 /* Package.swift in Sources */,
@@ -543,11 +563,16 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.heryordejy.Twitar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -576,6 +601,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,6 +640,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E7BF688C2ADE8977007EC983 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E7BF688D2ADE8977007EC983 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7BF688C2ADE8977007EC983 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E70D1DD42AC73B5600435E04 /* Project object */;
 }

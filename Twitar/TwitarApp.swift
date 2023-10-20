@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+@_exported import Inject
 
 @main
 struct TwitarApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabStackView()
+//            ContentView()
         }
     }
 }

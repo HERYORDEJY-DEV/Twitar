@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TrendsView: View {
 	//			MARK: - Properties
-
+	@State private var path = NavigationPath()
 	@State private var username: String = ""
 	@State private var showNavigationBar = false
 //	@FocusState private var emailFieldIsFocused: Bool = false
@@ -17,7 +17,7 @@ struct TrendsView: View {
 	var body: some View {
 		NavigationView {
 			VStack(spacing: 0.33) {
-				TabScreenNavView(activeScreen: .trends)
+				TabScreenNavView(path: $path, activeScreen: .trends)
 				ZStack {
 					ScrollView {
 						//					header

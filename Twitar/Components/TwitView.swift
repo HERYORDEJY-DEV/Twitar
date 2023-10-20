@@ -40,7 +40,8 @@ struct TwitView: View {
 
 	var body: some View {
 		NavigationLink {
-			//
+			TwitDetailView()
+				.navigationBarBackButtonHidden()
 		}
 		label: {
 			VStack(alignment: .leading) {

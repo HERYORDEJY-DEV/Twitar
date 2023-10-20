@@ -63,7 +63,9 @@ extension View {
 
 	@ViewBuilder
 	func withBottomShadow(color: Color = .colorShadow, bg: Color = .colorWhite, radius: CGFloat = 0, x: CGFloat = 0, y: CGFloat = 0.33) -> some View {
-		background(bg)
+		foregroundColor(.clear)
+			.background(bg)
+			.compositingGroup()
 			.shadow(color: color, radius: radius, x: x, y: y)
 	}
 
@@ -72,12 +74,15 @@ extension View {
 		background(bg)
 //			.frame(width: width, height: height)
 	}
-	
-	@ViewBuilder
-	func withFabButton(img: String) -> some View {
-		
-	}
 
+	@ViewBuilder
+	func withFabButton(img: String) -> some View {}
+
+	@ViewBuilder
+	func withCornerRadius(radius: CGFloat, corners: UIRectCorner) -> some View {
+		ModifiedContent(content: self, modifier: CornerRadiusStyle(radius: radius, corners: corners))
+	}
+	
 //	@ViewBuilder
 //	func primaryButton(width: CGFloat = 136, height: CGFloat = 34, cornerRadius: CGFloat = 16, bg: Color = Color.accent) -> some View {
 //		foregroundStyle(Color.white)

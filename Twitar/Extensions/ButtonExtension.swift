@@ -14,6 +14,10 @@ extension Button {
 		buttonStyle(PrimaryButtonStyle(width: width, height: height, cornerRadius: cornerRadius ?? height * 0.47059, bg: background))
 	}
 
+	func secondaryButton(width: CGFloat = .infinity, height: CGFloat = 48, cornerRadius: CGFloat? = nil, background: Color = Color(red: 0.91, green: 0.93, blue: 0.94)) -> some View {
+		buttonStyle(SecondaryButtonStyle(width: width, height: height, cornerRadius: cornerRadius ?? height * 0.47059, bg: background))
+	}
+
 	func bottomTabButton(showIndicator: Bool = false) -> some View {
 		buttonStyle(BottomTabButtonStyle())
 			.indicatorBadge(isVisible: showIndicator)

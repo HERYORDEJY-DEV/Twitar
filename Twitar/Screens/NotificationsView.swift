@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NotificationsView: View {
 	//			MARK: - Properties
-
+	@State private var path = NavigationPath()
 	@State var selectedTab: NotificationsTabHeaderEnum = .all
 
 	func onSelectTab(tab: NotificationsTabHeaderEnum) {
@@ -20,7 +20,7 @@ struct NotificationsView: View {
 
 	var body: some View {
 		VStack {
-			TabScreenNavView(activeScreen: .notification)
+			TabScreenNavView(path: $path, activeScreen: .notification)
 			NotificationsTabHeaderView(
 				onSelectTab: self.onSelectTab)
 			ZStack {

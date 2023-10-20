@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct TabStackView: View {
 //			MARK: - Properties
 
@@ -19,17 +18,17 @@ struct TabStackView: View {
 	var body: some View {
 		ZStack {
 			Group {
-				switch activeScreen {
+				switch activeScreen { 
 					case .home:
 						HomeView()
 					case .trends:
-						TrendsView() 
+						TrendsView()
 					case .notification:
 						NotificationsView() 
 					case .messages:
 						MessagesView()
 				}
-
+ 
 			}.frame(maxHeight: .infinity)
 				.background(Color.colorWhite)
 			BottomTabBarView(activeTabScreen: activeScreen, onSetActiveScreen: self.onSetActiveScreen)
